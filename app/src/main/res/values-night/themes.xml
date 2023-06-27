@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SprinFinal" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#0A0A0B</item>
+        <item name="colorPrimaryVariant">#251740</item>
+        <item name="colorOnPrimary">#4C2929</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#251D6E</item>
+        <item name="colorSecondaryVariant">#186766</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">#3C3943</item>
+        <item name="android:windowBackground">@drawable/noche</item>
+
+        <!-- Establecer el estilo para el TextView -->
+        <item name="android:textViewStyle">@style/textDark</item>
+
+    </style>
+</resources>

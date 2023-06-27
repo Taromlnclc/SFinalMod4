@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactActivity">
+
+
+    <Button
+        android:id="@+id/miLinkedin"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:background="@drawable/linkedin"
+        android:contentDescription="@string/linkedin"
+        android:onClick="botonLinkedin"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@id/miWhatsapp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/miWhatsapp"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:background="@drawable/whatsapp"
+        android:onClick="botonWhatsapp"
+        app:layout_constraintBottom_toBottomOf="@id/miSms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="130dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/miSms"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_marginTop="270dp"
+        android:background="@drawable/sms"
+        android:onClick="botonSms"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@id/miGmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/miGmail"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:background="@drawable/gmail"
+        android:onClick="botonGmail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="380dp"
+        android:text="" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

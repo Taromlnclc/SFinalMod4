@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">About me</string>
+    <string name="about">Lautaro Fernando Cornejo Arcos</string>
+    <string name="me">Informático, de la Carretera Austral, Los Lagos, Chile...</string>
+    <string name="more">Soy una persona apasionada por la tecnología y la programación. Desde muy joven, descubrí mi fascinación por la informática y decidí convertirla en mi carrera. Donde puedo combinar mi creatividad y habilidades técnicas para crear soluciones innovadoras.</string>
+    <string name="cont1"></string>
+    <string name="boton">Boton contacto</string>
+    <string name="swi">Boton Darkmode</string>
+    <string name="linkedin">Mi Linkedin</string>
+</resources>

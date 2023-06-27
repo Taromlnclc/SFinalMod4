@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/layCon">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="90"
+                android:layout_gravity="start"
+                android:text="@string/about"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/dianoc"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="10"
+                android:checked="true"
+                android:onClick="swidn"
+                android:thumb="@drawable/ic_switch_thumb"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                app:thumbTint="@drawable/ic_solluna"
+                app:trackTint="@drawable/ic_track" />
+        </TableRow>
+
+        <TableRow>
+            <ImageView
+                android:id="@+id/picme"
+                android:layout_width="0dp"
+                android:layout_height="200sp"
+                android:layout_weight="30"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/cont1"
+                android:src="@drawable/me"
+                android:background="@drawable/imarou"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:cropToPadding="true"
+                android:paddingTop="5sp"
+                android:paddingStart="5sp"
+                android:paddingBottom="5dp"
+                android:paddingEnd="5sp"/>
+
+            <TextView
+                android:id="@+id/more"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_marginBottom="5dp"
+                android:text="@string/more"
+                android:textSize="16sp" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewSlide"
+                android:layout_width="0dp"
+                android:layout_height="150sp"
+                android:layout_weight="20"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:cropToPadding="true"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:transitionGroup="true"
+                 />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/subtitleTextView"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="70"
+                android:text="@string/me"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/imaUbi"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="30"
+                android:scaleType="fitCenter"
+                android:layout_marginEnd="60dp"
+                android:contentDescription="@string/cont1"
+                android:src="@drawable/mapa"
+                android:backgroundTint="@color/white"
+                android:onClick="btnUbi"
+                app:backgroundTint="#9C7B81"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/comunicar"
+                app:backgroundTint="#2D263A"
+                app:fabSize="normal"
+                android:contentDescription="@string/cont1" />
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
