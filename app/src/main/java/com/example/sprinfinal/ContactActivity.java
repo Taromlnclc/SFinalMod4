@@ -41,6 +41,7 @@ public class ContactActivity extends AppCompatActivity {
         startActivity(intent);
         //enviarMensajeWhatsApp();
     }
+    //Este es otro metodo pero abre solo whatsapp y si no esta el contacto xD
     private void enviarMensajeWhatsApp() {
         try {
             Intent sendIntent = new Intent(); sendIntent.setAction(Intent.ACTION_SEND);
